@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Soria's Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+			<header class="header">
+				<h1 id="title" class="text-center">Jorge's Survey Form</h1>
+				<p id="description" class="description text-center">I want to express my grattitude for taking time and let me know your opinion about me. This will make me improve my skills and be a better professional.</p>
+			</header>
+			<form id="survey-form">
+				<div class="form-group">
+					<label id="name-label" for="name">Name</label>
+					<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name..." required>
+				</div>
+				<div class="form-group">
+					<label id="email-label" for="email">Email</label>
+					<input type="email" name="email" id="email" class="form-control" placeholder="Enter your email..." required>
+				</div>
+				<div>
+					<label id="number-label" for="number">Age <span class="clue"> (It's optional)</span></label>
+					<input type="number" name="age" id="number" min="10" max="90" class="form-control" placeholder="You could enter your age...">
+				</div>
+				<div class="form-group">
+					<p>Where did you meet me?</p>
+					<select id="dropdown" name="context" class="form-control" required>
+						<option disabled>Select an option from the list</option>
+						<option value="university">Technological University of Peru</option>
+						<option value="college">TECSUP</option>
+						<option value="job">LATAM Airlines</option>
+						<option value="linkedin">LinkedIn</option>
+						<option value="social-networks">Social Networks</option>
+						<option value="others">Others</option>
+					</select>					
+				</div>
+				<div class="form-group">
+					<p>Would you recommend me for a IT job?</p>
+					<label>
+						<input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitely
+					</label>
+					<label>
+						<input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
+					</label>
+					<label>
+						<input name="user-recommend" value="not pretty sure" type="radio" class="input-radio">Not pretty sure
+					</label>
+				</div>
+				<div>
+					<p>Which soft skill represent me at best?</p>
+					<select id="most-like" name="most-like" class="form-control" required>
+						<option disabled>Select an option...</option>
+						<option value="leadership">Leadership</option>
+						<option value="empathy">Empathy</option>
+						<option value="teamwork">Teamwork</option>
+						<option value="analytical-thinking">Analytical Thinking</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<p>What development web courses would you like to recommend me?<span class="clue">(Check all that you want)</span></p>
+					<label>
+						<input name="prefer" value="front-end" type="checkbox" class="input-checkbox">Front-end Courses
+					</label>
+					<label>
+						<input name="prefer" value="back-end" type="checkbox" class="input-checkbox">Back-end Courses
+					</label>
+					<label>
+						<input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Data Visualization Courses
+					</label>
+					<label>
+						<input name="prefer" value="devOps" type="checkbox" class="input-checkbox">DevOps Courses
+					</label>
+					<label>
+						<input name="prefer" value="cybersecurity" type="checkbox" class="input-checkbox">Cybersecurity Courses
+					</label>
+					<label>
+						<input name="prefer" value="game-dev" type="checkbox" class="input-checkbox">Game Development Courses
+					</label>
+					<label>
+						<input name="prefer" value="databases" type="checkbox" class="input-checkbox">Databases Courses
+					</label>
+				</div>
+				<div>
+					<p>Any comments or suggestions?</p>
+					<textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+				</div>
+				<div class="form-group">
+					<button type="submit" id="submit" class="submit-button">Submit</button>
+				</div>
+			</form>
+		</div>
+</body>
+</html>
